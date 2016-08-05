@@ -46,6 +46,41 @@ Route::group(['prefix' => 'admin', 'middleware' => ['web']], function () {
     Route::post('/login/register', [
         'uses' => 'Admin\UserController@postUserRegister',
         'as' => 'admin.register'
+
+    ]);
+    Route::get('/article/addarticle', [
+        'uses' => 'Admin\RouteController@gotoAddArticle',
+        'as' => 'admin.gotoaddarticle',
+    ]);
+    Route::get('/logout', [
+        'uses' => 'Admin\UserController@getLogout',
+        'as' => 'admin.logout'
+    ]);
+    Route::get('/article', [
+        'uses' => 'Admin\RouteController@gotoArticle',
+        'as' => 'admin.gotoarticle'
+    ]);
+    Route::get('/category', [
+        'uses' => 'Admin\RouteController@gotoCategory',
+        'as' => 'admin.gotocategory'
+    ]);
+    Route::get('/addcategory', [
+        'uses' => 'Admin\RouteController@gotoAddCategory',
+        'as' => 'admin.gotoaddcategory'
+    ]);
+    Route::post('/addcategory/add', [
+        'uses' => 'Admin\CategoryController@postAddCategory',
+        'as' => 'admin.addcategory',
+        'middleware' => 'auth'
+    ]);
+    Route::post('/addarticle/add', [
+        'uses' => 'Admin\ArticleController@postAddArticle',
+        'as' => 'admin.addarticle',
+        'middleware' => 'auth'
+    ]);
+    Route::post('/addarticle/convertUrl', [
+        'uses' => 'Admin\ArticleController@postConvertUrl',
+        'as' => 'admin.converturl',
     ]);
 });
 

@@ -1,0 +1,28 @@
+{
+  "name": "han",
+  "description": "a module for tanslating Chinese(汉字) into pinyin",
+  "version": "0.0.7",
+  "author": {
+    "name": "Sofish Lin",
+    "email": "sofish@me.com"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "keywords": [
+    "han",
+    "pinyin",
+    "url"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sofish/han.git"
+  },
+  "main": "han",
+  "bin": {},
+  "scripts": {},
+  "engines": {
+    "node": "*"
+  },
+  "_from": "han@0.0.7",
+  "_resolved": "http://registry.npm.taobao.org/han/download/han-0.0.7.tgz"
+}

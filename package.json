@@ -1,10 +1,16 @@
 {
   "private": true,
   "devDependencies": {
-    "gulp": "^3.8.8"
+    "babel-core": "^6.11.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "gulp": "^3.8.8",
+    "webpack": "^1.13.1"
   },
   "dependencies": {
-    "laravel-elixir": "^4.0.0",
-    "bootstrap-sass": "^3.0.0"
+    "bootstrap-sass": "^3.0.0",
+    "han": "^0.0.7",
+    "laravel-elixir": "^4.0.0"
   }
 }

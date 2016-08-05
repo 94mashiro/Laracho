@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{ URL::to('src/css/style.css') }}">
 </head>
 <body style="background-color: #fff">
+@include('.includes.admin.header')
 <div class="contaner">
     @yield('content')
 </div>

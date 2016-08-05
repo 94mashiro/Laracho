@@ -1,7 +1,7 @@
 <?php
 /**
  * A helper file for Laravel 5, to provide autocomplete information to your IDE
- * Generated for Laravel 5.2.22 on 2016-07-30.
+ * Generated for Laravel 5.2.22 on 2016-08-04.
  *
  * @author Barry vd. Heuvel <barryvdh@gmail.com>
  * @see https://github.com/barryvdh/laravel-ide-helper
@@ -6860,8 +6860,8 @@ namespace {
          * @return array 
          * @static 
          */
-        public static function all(){
-            return \Illuminate\Http\Request::all();
+        public static function vall(){
+            return \Illuminate\Http\Request::vall();
         }
         
         /**

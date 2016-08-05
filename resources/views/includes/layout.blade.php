@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="{{ URL::to('src/css/style.css') }}">
 </head>
 <body>
-<div class="container">
 @include('includes.header')
+<div class="container">
 @yield('content')
 @include('includes.footer')
 </body>

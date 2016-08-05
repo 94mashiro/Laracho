@@ -9,3 +9,11 @@
         </div>
     </div>
 @endif
+
+@if(Session::has('message'))
+    <div class="row">
+        <div class="alert alert-success error-block">
+            {{ Session::get('message') }}
+        </div>
+    </div>
+@endif
